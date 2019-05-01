@@ -1,0 +1,178 @@
+.login-content {
+    min-width: 1020px;;
+}
+
+.login-header {
+    height: 60px;
+    background-color: #d32323;
+    /* position: relative; */
+    margin: 0 auto;
+    padding: 12px 15px;
+}
+
+.login-logo {
+    background-image: url('https://s3-media2.fl.yelpcdn.com/assets/srv0/styleguide/1ea40efd80f5/assets/img/brand_guidelines/yelp_fullcolor.png');
+    background-size: 200px 200px;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    padding: 0;
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: 700;
+    color: transparent;
+}
+
+.login-form-container {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.login-layout {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.login-form { 
+    /* max-width: 300px;
+    height: 360px;
+    margin: auto;
+    padding: 0px 5px;
+    margin-top: 100px;
+    text-align: center; */
+}
+
+.login-form-title {
+    font-size: 22px;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-weight: bold;
+    margin-bottom: 6px;
+    line-height: 1.28571em;
+    color: #d32323;
+}
+
+.login-form-subtitle {
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.login-form-subtitle a {
+    color: #0073bb;
+    cursor: pointer;
+}
+
+.login-legal {
+    color: #333;
+    font-size: 12px;
+    line-height: 1.5em;
+    margin-bottom: 12px;
+}
+
+.login-form-content [type="text"],
+.login-form-content [type="email"],
+.login-form-content [type="password"] {
+    display: block;
+    font-size: 14px;
+    margin: 0 0 9px;
+    padding: 5px 9px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.login-form-content input[type='text']:focus, 
+.login-form-content input[type='email']:focus, 
+.login-form-content input[type='password']:focus {
+    box-shadow: 0 0 3px rgba(34,101,193, 1);
+    border: 1px solid rgba(34,101,193, 1);
+}
+
+.login-error-glow {
+    border: 2px solid #d32323 !important;
+    color: #d32323;
+}
+
+.login-error-glow:focus {
+    box-shadow: 0 0 3px rgba(34,101,193, 1);
+    border: 1px solid rgba(34,101,193, 1) !important;
+    color: black;
+}
+
+.login-form-content input[type='submit'] {
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 8px;
+    line-height: 1.3125em;
+    color: white;
+    border: 1px solid #8d0005;
+    border-radius: 3px;
+    background-color: #db0e0e;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+}
+
+.login-form-content input[type="submit"]:hover {
+    background-color: #e71a04;
+}
+
+.login-form-redirect {
+    margin-top: 12px;
+    text-align: right;
+    font-size: 12px;
+    color: #999;
+    line-height: 1.5em;
+}
+
+.login-form-redirect a {
+    color: #0073bb;
+    cursor: pointer;
+}
+
+.login-picture {
+    margin: auto;
+    margin-top: 100px;
+    padding: 0 5px 12px 5px;
+    text-align: center;
+    width: 382px;
+    height: 342px;
+}
+
+.login-input-name {
+    display: flex;
+}
+
+.login-input-name [type="text"]:first-child {
+    margin-right: 5px;
+}
+
+.login-errors-container {
+    background-color: #fcd6d3;
+    width: 100%;
+    margin: 18px 18px 0px 24px;
+    padding: 18px 18px 18px 24px;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.login-errors-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-close-btn {
+    font-size: 24px;
+    color: #666;
+    opacity: 0.5;
+}
+
+.error-close-btn:hover {
+    opacity: 1;
+}
