@@ -142,13 +142,12 @@
 .login-picture {
     margin: auto;
     margin-top: 100px;
-    padding: 0 5px 12px 5px;
+    /* padding: 0 5px 12px 5px; */
     text-align: center;
-    width: 300px;
-    /* right: 100px; */
-    height: 550px;
+    width: 600px;
+    height: 800px;
     position: relative;
-    left: 200px;
+    left: 95px;
     overflow: hidden;
 }
 
