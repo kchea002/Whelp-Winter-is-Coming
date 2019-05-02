@@ -5,7 +5,7 @@
 .login-header {
     height: 60px;
     background-color: #d32323;
-    /* position: relative; */
+    position: relative;
     margin: 0 auto;
     padding: 12px 15px;
 }
@@ -14,7 +14,7 @@
     background-image: url('https://s3-media2.fl.yelpcdn.com/assets/srv0/styleguide/1ea40efd80f5/assets/img/brand_guidelines/yelp_fullcolor.png');
     background-size: 200px 200px;
     background-position: center;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     padding: 0;
     margin: 0 auto;
     font-size: 28px;
@@ -27,19 +27,23 @@
     margin: 0 auto;
 }
 
-.login-layout {
+.login-top {
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
 }
 
-.login-form { 
-    /* max-width: 300px;
+.login-main { 
+    width: 300px;
     height: 360px;
     margin: auto;
     padding: 0px 5px;
+    position: relative;
+    /* margin-left: 550px; */
     margin-top: 100px;
-    text-align: center; */
+    text-align: center;
+
+    
 }
 
 .login-form-title {
@@ -140,8 +144,12 @@
     margin-top: 100px;
     padding: 0 5px 12px 5px;
     text-align: center;
-    width: 382px;
-    height: 342px;
+    width: 300px;
+    /* right: 100px; */
+    height: 550px;
+    position: relative;
+    left: 200px;
+    overflow: hidden;
 }
 
 .login-input-name {

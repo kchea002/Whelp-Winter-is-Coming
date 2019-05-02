@@ -6,6 +6,7 @@ const Greeting = ({currentUser, demo}) => {
         <div>
             <div className="log"><Link to='/login'>Log In </Link></div>
             <div className="sign"><Link to='/signup'>Sign Up </Link></div>
+        
         </div>
     )
 }

@@ -31,29 +31,35 @@ class SessionForm extends React.Component {
                     </div>
                 </div>
 
-            
-                <form onSubmit={this.handleSubmit} className="login-form-box">
-                    <div className="login-form-content">
-                        {/* {newUserForm} */}
-                        <input type="email" required
-                            value={this.state.email}
-                            placeholder="Email"
-                            onChange={this.update('email')}
-                            className="login-form" />
+            <div className="login-top">
+                    <div className="login-main">
+                        <form onSubmit={this.handleSubmit} className="login-form-box">
+                            <div className="login-form-content">
 
-                        <input type="password" required
-                            value={this.state.password}
-                            placeholder="Password"
-                            onChange={this.update('password')}
-                            className="login-input" />
+                                <input type="email" required
+                                    value={this.state.email}
+                                    placeholder="Email"
+                                    onChange={this.update('email')}
+                                    className="login-input" />
 
-                    
-
-                        <input className="session-submit" type="submit" value={this.props.formType} />
+                                <input type="password" required
+                                    value={this.state.password}
+                                    placeholder="Password"
+                                    onChange={this.update('password')}
+                                    className="login-input" />
+                                <input className="session-submit" type="submit" value={this.props.formType} />
+                            </div>
+                        </form>
                     </div>
-                </form>
 
-
+                    <div className="login-picture">
+                        <img src="https://www.pngkey.com/png/full/118-1180266_house-targaryen-png-image-house-targaryen-logo-png.png"></img>
+                    </div>
+            
+            
+            </div>
+                
+                
             </div>
         )
     }
