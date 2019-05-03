@@ -7,7 +7,7 @@ class Api::SessionsController < ApplicationController
             login(@user)
             render "api/users/show"   
         else
-            render json: ["Email/Username are incorrect."]
+            render json: ["Email is incorrect."]
         end
     end
 

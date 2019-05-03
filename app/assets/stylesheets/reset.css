@@ -16,7 +16,7 @@ span, article, footer, time, small {
   background: transparent;
 } */
 
-body {
+body, footer {
     margin: 0;
   padding: 0;
   border: 0;
@@ -28,6 +28,7 @@ body {
   vertical-align: inherit;
   box-sizing: inherit;
   background: transparent;
+  width: 100%
 }
 
 /* ul {

@@ -5,9 +5,10 @@ class Api::UsersController < ApplicationController
 
         if @user.save
             login(@user)
+            @user.photo.attach(io: File.open('./app/assets/images/user/demo_user.png'), filename: 'demo_user.png')
             render "api/users/show"
         else
-            render json: @user.errors.full_messages
+            render json: @user.errors.full_messages, status: 401
         end
     end
 

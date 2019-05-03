@@ -6,7 +6,7 @@ const Homepage = () => {
 
     return (
             <div className="main">
-                <div className="header"> Use our website before the White walkers come! </div>
+                <div className="header"> Winter is coming! So stock up and prepare! </div>
                 <div className="homepage">
 
                     <div className="full-nav">
@@ -20,9 +20,15 @@ const Homepage = () => {
                     </div>
 
                     <div className="homepage-logo">
-                        <img src="https://vivalajaiba.com/wp-content/uploads/2018/07/yelp-logo.png" />
-
+                        <div className="logo1">
+                        <img src="https://i.imgur.com/O22tB8P.png" />
+                        </div>
+                        <div className="logo2">
+                        <img src="http://www.pngall.com/wp-content/uploads/2016/05/Game-of-Thrones-Logo.png" />
+                        </div>
                     </div>
+                    
+                 
 
                     <div className="input_text_wrapper">
                         <label className="non-selector"> Find </label>
