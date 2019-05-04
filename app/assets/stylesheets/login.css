@@ -29,9 +29,7 @@
     width: 300px;
     height: 360px;
     margin: auto;
-    padding: 0px 5px;
-    position: relative;
-    margin-top: 100px;
+    /* padding: 0px 5px; */
     text-align: center;
 
     
@@ -64,16 +62,6 @@
 
 
 
-.login-error-glow {
-    border: 2px solid #d32323 !important;
-    color: #d32323;
-}
-
-.login-error-glow:focus {
-    box-shadow: 0 0 3px rgba(34,101,193, 1);
-    border: 1px solid rgba(34,101,193, 1) !important;
-    color: black;
-}
 
 .login-form input[type='submit'] {
     font-size: 16px;
@@ -120,14 +108,11 @@
 
 .login-errors {
     background-color: #fcd6d3;
-    width: 40%;
-    height: 20%;    
+    width: 80%;
+    height: 40%;    
     border-radius: 3px;
     font-size: 16px;
+    position: relative;
+    left: 20%;
+    top: 20px;
 }
-
-/* .login-errors-center {
-    display: flex;
-    justify-content: space-between;
-} */
-

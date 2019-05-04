@@ -30,7 +30,7 @@ const Homepage = () => {
                     
                  
 
-                    <div className="input_text_wrapper">
+                    <div className="search-container">
                         <label className="non-selector"> Find </label>
                         <input id="search" type="text" placeholder="dragons, white walkers, dragonglass..." />
                     </div>

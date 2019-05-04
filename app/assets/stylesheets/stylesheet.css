@@ -44,11 +44,18 @@
 
 .non-selector {
     user-select: none;
-    float: left;
+    /* float: left; */
     cursor: default;
     /* padding: 10px; */
     color: #666;
     /* margin-left: 50px; */
+}
+
+.search-container {
+    width: 960px;
+    display: flex;
+    position: relative;
+    
 }
 
 .header {

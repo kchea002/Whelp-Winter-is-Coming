@@ -1,2 +1,2 @@
 json.extract! user, :id, :email
-# json.photo url_for(user.photo)
+json.photo url_for(user.photo)

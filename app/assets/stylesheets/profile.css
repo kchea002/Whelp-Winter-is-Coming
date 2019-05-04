@@ -1,0 +1,78 @@
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: 7px;
+    bottom: 1px;
+}
+
+.profile-picture-two {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: 10px;
+    /* padding-left: 10px; */
+}
+
+.profile-button {
+    border-radius: 6px 0 0 6px;
+    display: flex;
+    width: 51px;
+    height: 51px;
+    position: relative;
+    left: 85%;
+}
+
+/* .profile-width {
+    display: flex;
+    justify-content: flex-end;
+} */
+
+.downarrow-container {
+    display: flex;
+   align-items: center;
+   height: 51px;
+   background: rgba(0, 0, 0, .2);
+   border: 1px thin black;
+   border-radius: 0px 6px 6px 0px;
+   position: relative;
+   bottom: 2px;
+    right: 6px;
+}
+
+.downarrow {
+    width: 20px;
+    height: 20px;
+}
+
+.profile-container {
+    width: 217px;
+    height: 265px;
+    background: white; 
+    position: relative; 
+    top: 10px;
+    left: 40px;
+    /* display: flex; */
+    border-radius: 4px;
+}
+
+.profile-info {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    width: 80%;
+    /* text-align: center; */
+    height: 120px;
+    margin: 0 auto;
+    font-size: 10px;
+    
+}
+
+.logout-button {
+    background: white;
+    /* margin: auto; */
+    border: none;
+    color: #0773BB;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-left: 10px;
+}

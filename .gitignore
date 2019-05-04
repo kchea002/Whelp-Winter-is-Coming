@@ -16,6 +16,7 @@
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
+st
 
 /node_modules
 /yarn-error.log
@@ -31,3 +32,5 @@ bundle.js
 bundle.js.map
 .DS_Store
 npm-debug.log
+/storage/storage
+/config/credentials.yml
