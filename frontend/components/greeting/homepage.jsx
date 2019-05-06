@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import GreetingContainer from './greeting_container';
+import Locations from './locations';
 
 const Homepage = () => {
 
@@ -31,16 +32,19 @@ const Homepage = () => {
                  
 
                     <div className="search-container">
-                        <label className="non-selector"> Find </label>
+                        <div className="find-label">Find</div>
                         <input id="search" type="text" placeholder="dragons, white walkers, dragonglass..." />
+                        <div className="near-label">Near</div>
+                        <input id="searchtwo" type="text" placeholder="The North" />
+                        <div className="dragon-search"> <img src="https://webstockreview.net/images/clipart-dragon-game-throne-6.png" /></div>
                     </div>
 
 
                 </div>
+                
+                <Locations />
 
-            </div>
-
-        
+            </div>        
     )
 };
 

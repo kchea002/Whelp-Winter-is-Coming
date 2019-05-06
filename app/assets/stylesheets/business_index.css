@@ -1,0 +1,28 @@
+.login-header-index {
+    height: 70px;
+    background-color: #d32323;
+    padding: 12px 0px;
+    display: flex;
+}
+
+.index-tab-bar {
+    height: 41px;
+    border-bottom: 1px solid #e6e6e6;
+    background: #FAFAFA;
+}
+
+.index-title-bar {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #e6e6e6;
+    height: 89px;
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+
+.index

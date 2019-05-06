@@ -8,3 +8,6 @@
 
 
 demo = User.create({email: "jonsnow@westeros.com", password: "password"})
+
+business_one = Business.create({name: "Gendry's Smithy", location: "King's Landing", address:"The slums" })
+business_two = Business.create({name: "Hotpie's Bakery", location: "Riverlands", address:"Crossroads" })

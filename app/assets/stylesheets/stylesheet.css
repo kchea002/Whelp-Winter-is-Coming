@@ -1,5 +1,5 @@
 .main {
-    height: 700px;
+    height: 900px;
 }
 
 .main-parent-div {
@@ -31,32 +31,6 @@
 }
 
 
-#search {
-    width: 480px;
-    height: 45px;
-    position: relative;
-    left: 20%;
-    font-size: 18px;
-    color: rgb(200, 200, 200);
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    border-radius: 6px 0 0 6px;
-}
-
-.non-selector {
-    user-select: none;
-    /* float: left; */
-    cursor: default;
-    /* padding: 10px; */
-    color: #666;
-    /* margin-left: 50px; */
-}
-
-.search-container {
-    width: 960px;
-    display: flex;
-    position: relative;
-    
-}
 
 .header {
     height: 27px;

@@ -1,0 +1,70 @@
+
+#search {
+    width: 380px;
+    height: 43px;
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     /* border-right: 1px solid black; */
+     border: 1px solid transparent;
+}
+
+#searchtwo {
+    width: 380px;
+    height: 43px;
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid transparent;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;   
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+.find-label {
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    background: white;
+     border-right: 0px solid transparent;
+    display: flex;
+    align-items: center;
+    padding: 0 5px 0 5px;
+     border: 1px solid transparent;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.near-label {
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    background: white;
+     border-right: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    padding: 0 5px 0 5px;
+    border-left: 1px solid black;
+}
+
+.dragon-search {
+    background: black;
+    border-radius: 0px 4px 4px 0px;
+     border: 0px solid transparent;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dragon-search img {
+    width: 35px;
+    height: 35px;
+}
+
+
+
