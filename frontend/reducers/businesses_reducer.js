@@ -3,7 +3,7 @@ import merge from 'lodash/merge';
 
 const businessesReducer = (oldState = {}, action) => {
     Object.freeze(oldState);
-    
+
     switch(action.type) {
         case RECEIVE_BUSINESSES:
             return action.businesses;

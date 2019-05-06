@@ -6,7 +6,7 @@ import LoginFormContainer from './session/login_form_container';
 import SignupFormContainer from './session/signup_form_container';
 import Footer from './greeting/footer';
 import BusinessContainer from './business/business_index_container';
-
+import BusinessShowContainer from './business/business_show_container';
 
 
 const App = () => (
@@ -15,7 +15,7 @@ const App = () => (
         <AuthRoute exact path="/login" component={LoginFormContainer} />
         <AuthRoute exact path="/signup" component={SignupFormContainer} />
         <Route exact path="/businesses" component={BusinessContainer} />
-        {/* <Route exact path="/biz/businessId" component={BusinessShowContainer} /> */}
+        <Route exact path="/biz/businessId" component={BusinessShowContainer} />
         <Route path="/" component={Footer} />
     </div>
 );

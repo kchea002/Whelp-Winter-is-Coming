@@ -40,6 +40,9 @@ ActiveRecord::Schema.define(version: 2019_05_04_232902) do
     t.string "name", null: false
     t.string "address", null: false
     t.string "location", null: false
+    t.float "latitude"
+    t.float "longitude"
+    t.string "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_businesses_on_name"
