@@ -15,7 +15,11 @@ class BusinessIndex extends React.Component {
 
 
     render(){
-        
+        let businesses = this.props.businesses.map((business, idx) => {
+            return (
+                <BusinessItemContainer key={business.id} business={business} />
+            )
+        });
 
         return (
             <div>
@@ -26,11 +30,12 @@ class BusinessIndex extends React.Component {
                 </div>
                 <div className="index-tab-bar"></div>
                 <div className="index-title-bar"> Browsing businesses in Westeros</div>
-                <ul>
-                    {this.props.businesses.map(business => {
-                        return <BusinessItemContainer key={business.id} business={business} /> 
-                    })}
-                </ul>  
+                <div className="index-item-container" >
+                    <ul >
+                        {businesses}
+                    </ul> 
+                </div>
+              
             </div>
 
         )     

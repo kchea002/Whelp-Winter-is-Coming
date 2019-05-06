@@ -36,7 +36,7 @@ const Homepage = () => {
                         <input id="search" type="text" placeholder="dragons, white walkers, dragonglass..." />
                         <div className="near-label">Near</div>
                         <input id="searchtwo" type="text" placeholder="The North" />
-                        <div className="dragon-search"> <img src="https://webstockreview.net/images/clipart-dragon-game-throne-6.png" /></div>
+                    <div className="dragon-search"> <img src="https://webstockreview.net/images/clipart-dragon-game-throne-6.png" /></div>
                     </div>
 
 
