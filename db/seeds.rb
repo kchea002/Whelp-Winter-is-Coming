@@ -16,7 +16,7 @@ demo.photo.attach(io: File.open('./app/assets/images/user/demo_user.png'), filen
 
 
 
-business_one = Business.create({name: "Gendry's Smithy", location: "King's Landing", address:"The slums", longitude: 37.1, latitude: 39.9, price: '$$$'})
+business_one = Business.create({name: "Gendry's Smithy", location: "King's Landing", address:"The Slums", longitude: 37.1, latitude: 39.9, price: '$$$'})
 business_two = Business.create({name: "Hotpie's Bakery", location: "Riverlands", address:"Crossroads", longitude: 40.0, latitude: 69.9, price: '$$' })
 
 business_one.photo.attach(io: File.open('./app/assets/images/business/gendry.jpg'), filename: 'gendry.jpg')

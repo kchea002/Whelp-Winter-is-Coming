@@ -68,13 +68,23 @@
 }
 
 .index-name {
-    color: #0073bb;
+
     font-family: sans-serif;
     font-size: 16px;
     font-weight: 700;
 }
 
+.index-name a {
+    color: #0073bb;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
 .index-address {
     font-family: sans-serif;
     font-size: 14px;
+    text-align: center
 }
