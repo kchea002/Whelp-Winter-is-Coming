@@ -87,7 +87,7 @@
 .index-address {
     font-family: sans-serif;
     font-size: 14px;
-    text-align: center
+    text-align: center;
 }
 
 .index-main-body {
@@ -102,7 +102,7 @@
 }
 
 #map:hover {
-    /* transform: scale(1.5) */
+    
     transform: translateX(-400px) translateY(-100px) scale(1.5);
     transition: 1s;
 }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import soundfile from '../../../app/assets/song/GoT.mp3';
-// import Sound from 'react-sound';
+
 
 
 
@@ -32,12 +31,12 @@ class Footer extends React.Component {
 
                 } */}
 
-                {/* <div>
+                 <div>
                     <iframe src="GoT.mp3" allow="autoplay" id="audio" ></iframe>
                     
                 
                 </div> 
-               */}
+               
                 
              
             </div>

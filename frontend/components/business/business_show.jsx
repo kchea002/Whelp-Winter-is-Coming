@@ -32,6 +32,9 @@ class BusinessShow extends React.Component {
             </>
         } 
 
+        debugger
+        // const reviews = this.props.reviews
+
         return (
             <div>
                 
