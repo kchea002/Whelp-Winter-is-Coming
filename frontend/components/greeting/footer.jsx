@@ -31,13 +31,12 @@ class Footer extends React.Component {
                     )
 
                 } */}
-
+{/* 
                 <div>
                     <iframe src="GoT.mp3" allow="autoplay" id="audio" ></iframe>
-                    {/* <audio id="player" autoplay controls><source src="GoT.mp3" type="audio/mp3"></source></audio> */}
                     
                 
-                </div> 
+                </div>  */}
               
                 
              
