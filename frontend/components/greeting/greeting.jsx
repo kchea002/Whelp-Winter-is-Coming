@@ -8,7 +8,7 @@ const Greeting = ({currentUser, demo}) => {
         <div className="right-nav">
             <div className="log"><Link to='/login'>Log In </Link></div>
             <div className="sign"><Link to='/signup'>Sign Up </Link></div>
-            <button className="demo-login" onClick={demo}>Demo Log In</button>
+            {/* <button className="demo-login" onClick={demo}>Demo Log In</button> */}
         </div>
     );
 

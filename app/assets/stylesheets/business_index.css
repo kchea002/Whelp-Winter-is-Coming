@@ -27,10 +27,11 @@
 .index-item-container {
     /* background: grey; */
     width: 642px;
-    height: 500px;
+    /* height: 500px; */
     font-size: 20px;
     position: relative;
     left: 18%;
+    display: flex;
 }
 
 .index-single-container {
@@ -87,4 +88,21 @@
     font-family: sans-serif;
     font-size: 14px;
     text-align: center
+}
+
+.index-main-body {
+    height: 200%;
+}
+
+#map {
+    height: 550px;
+    width: 400px;
+    position: fixed;
+    left: 900px;
+}
+
+#map:hover {
+    /* transform: scale(1.5) */
+    transform: translateX(-400px) translateY(-100px) scale(1.5);
+    transition: 1s;
 }

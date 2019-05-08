@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {login, signup } from './util/session_api_util';
 import configureStore from './store/store.js';
 import Root from './components/root'
-import { fetchBusinesses } from './actions/business_actions';
+import { fetchBusinesses, fetchBusiness } from './actions/business_actions';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.getState = store.getState;
     window.fetchBusinesses = fetchBusinesses
+    window.fetchBusiness = fetchBusiness("1")
 
 
     const root = document.getElementById('root');

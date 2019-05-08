@@ -57,9 +57,11 @@
 
 .sign {
      padding-right: 40px;
+     /* border: 2px solid #fff; */
+     background-attachment: white;
 }
 
-.demo-login:hover {
+.sign:hover {
     color: rgb(181, 47, 47);
     background: white;
 }

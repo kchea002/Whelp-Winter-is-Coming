@@ -13,8 +13,7 @@ class BusinessItem extends React.Component {
                 <img className="index-image" src={this.props.business.photo} />
                 <div className="index-info">
                     <div className="index-name">
-                        {business.id} 
-                        <Link to={`/biz/${business.id}`}><div> {business.name}</div> </Link>
+                        {business.id}. &nbsp; <Link to={`/biz/${business.id}`}><div> {business.name}</div> </Link>
                        
                         <div> {business.price} </div>
                       

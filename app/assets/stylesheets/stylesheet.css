@@ -1,5 +1,5 @@
 .main {
-    height: 900px;
+    height: 1200px;
 }
 
 .main-parent-div {
@@ -63,3 +63,7 @@ body {
     height: 150px;
 }
 
+
+#audio {
+    display: none;
+}

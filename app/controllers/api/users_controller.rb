@@ -5,7 +5,7 @@ class Api::UsersController < ApplicationController
 
         if @user.save
             login(@user)
-            # @user.photo.attach(io: File.open('./app/assets/images/user/demo_user.png'), filename: 'demo_user.png')
+            @user.photo.attach(io: File.open('./app/assets/images/user/demo_user.png'), filename: 'demo_user.png')
             render "api/users/show"
         else
             render json: @user.errors.full_messages, status: 401
@@ -15,7 +15,7 @@ class Api::UsersController < ApplicationController
 private
 
   def user_params
-    params.require(:user).permit(:password, :email)
+    params.require(:user).permit(:password, :email, :first_name, :last_name, :house)
   end
 
 end

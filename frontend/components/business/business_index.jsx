@@ -22,7 +22,7 @@ class BusinessIndex extends React.Component {
         });
 
         return (
-            <div>
+            <div className="index-main-body">
                 <div className="login-header-index">
                     <Link to={'/'}>
                         <img className="login-logo" src="https://i.imgur.com/O22tB8P.png" />
@@ -34,6 +34,10 @@ class BusinessIndex extends React.Component {
                     <ul >
                         {businesses}
                     </ul> 
+                    <img id="map" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/41cbc76b-d7cc-48de-aa20-38a58b895935/dal295u-e59f3044-9052-4c4d-a529-23b140982c70.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQxY2JjNzZiLWQ3Y2MtNDhkZS1hYTIwLTM4YTU4Yjg5NTkzNVwvZGFsMjk1dS1lNTlmMzA0NC05MDUyLTRjNGQtYTUyOS0yM2IxNDA5ODJjNzAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.U6gYZ37gHnrL75Gl00G_SsACGNh3tp5QkOl9VqGHXwk" />
+                </div>
+                <div>
+                    
                 </div>
               
             </div>
