@@ -84,9 +84,6 @@ const Homepage = () => {
                 <Link to={'/businesses'}>See more businesses</Link>
             </div>
             
-            <video width="320" height="240" autoPlay muted controls>
-                <source src="https://www.youtube.com/watch?v=DIgQc_XwHHM" type="video/mp4" />
-                </video>
             
 
             </div>        
