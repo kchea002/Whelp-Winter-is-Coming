@@ -2,10 +2,16 @@
     height: 320px;
     /* background: grey; */
     /* box-sizing: border-box; */
-    margin-left: 15%;
-    margin-right: 15%;  
+    /* margin-left: 450px;
+    margin-right: 450px;   */
+    width: 1000px;
     display: flex;
     justify-content: space-between;
+}
+
+.homepage-center {
+    display: flex;
+    justify-content: center;
 }
 
 .homepage-popular {
