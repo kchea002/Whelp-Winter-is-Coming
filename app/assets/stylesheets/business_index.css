@@ -26,12 +26,13 @@
 
 .index-item-container {
     /* background: grey; */
-    width: 642px;
+    /* width: 642px; */
     /* height: 500px; */
     font-size: 20px;
     position: relative;
-    left: 18%;
+    /* left: 18%; */
     display: flex;
+    justify-content: center;
 }
 
 .index-single-container {
@@ -39,6 +40,8 @@
     background: transparent;
     border-top: 1px solid #e6e6e6;
     display: flex;
+    position: relative;
+    right: 20%;
     /* align-items: center; */
 }
 
@@ -95,14 +98,15 @@
 }
 
 #map {
-    height: 550px;
-    width: 400px;
+    /* height: 550px; */
+    height: 70%;
+    width: 30%;
     position: fixed;
-    left: 900px;
+    left: 65%;
 }
 
 #map:hover {
     
-    transform: translateX(-400px) translateY(-100px) scale(1.5);
+    transform: translateX(-500px) translateY(-100px) scale(1.35);
     transition: 1s;
 }

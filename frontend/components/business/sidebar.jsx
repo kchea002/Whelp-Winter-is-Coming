@@ -93,10 +93,6 @@ const Sidebar = () => {
                         <div className="sidebar-info-info">Yes, Horses </div>
                     </li>
                     <li className="sidebar-info-item">
-                        <div className="sidebar-info-desc">Bike Parking</div>
-                        <div className="sidebar-info-info">Yes</div>
-                    </li>
-                    <li className="sidebar-info-item">
                         <div className="sidebar-info-desc">Wheelchair Accessible</div>
                         <div className="sidebar-info-info">Yes</div>
                     </li>

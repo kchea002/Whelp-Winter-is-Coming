@@ -5,9 +5,11 @@ export const RECEIVE_BUSINESSES = "RECEIVE_BUSINESSES";
 export const RECEIVE_BUSINESS = "RECEIVE_BUSINESS";
 
 
-export const receiveBusinesses = ({ businesses }) => ({
+export const receiveBusinesses = ({ businesses, reviews, authors }) => ({
         type: RECEIVE_BUSINESSES,
-        businesses
+        businesses,
+        reviews,
+        authors
     });
 
 

@@ -5,12 +5,16 @@ import {fetchBusiness} from '../../actions/business_actions';
 const mSTP = (state, ownProps) => {
         
        let businessId = ownProps.match.params.businessId
-        let business = state.entities.businesses
+        let business = state.entities.businesses[businessId]
         
+        let reviews = business.reviewIds.map( rid => state.entities.reviews[rid]);
+        
+    
         return {
             businessId,
-            business
-        }
+            business,
+            reviews
+        };
 };
 
 const mDTP = dispatch => ({

@@ -5,15 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-# require 'open_uri'
+# require 'open-uri'
 
 User.destroy_all
 Business.destroy_all
 Review.destroy_all
 
 demo = User.create(email: "jonsnow@westeros.com", password: "password", first_name: 'Jon', last_name: 'Snow', house: 'House Stark')
+user1 = User.create(first_name: 'Tyrion', last_name: 'Lannister', email: 'tlann@westeros.com', password: 'password', house: 'House Lannister')
+user2 = User.create(first_name: 'Jamie', last_name: 'Lannister', email: 'jlann@westeros.com', password: 'password', house: 'House Lannister')
+
 demo.photo.attach(io: File.open('./app/assets/images/user/demo_user.png'), filename: 'demo_user.png')
-user1 = User.create(first_name: 'Tyrion', last_name: 'Lannister', email: 'mary123@mail.com', password: 'password', house: 'House Lannister')
+user1.photo.attach(io: File.open('./app/assets/images/user/tyrion.jpg'), filename: 'tyrion.jpg')
+user2.photo.attach(io: File.open('./app/assets/images/user/jamie.png'), filename: 'jamie.png')
 
 
 business1 = Business.create({name: "Gendry's Smithy", location: "King's Landing", address:"Street of Steel", longitude: 37.1, latitude: 39.9, price: '$'})
@@ -46,5 +50,6 @@ business5.photos.attach(io: File.open('./app/assets/images/business/FW3.jpg'), f
 business5.photos.attach(io: File.open('./app/assets/images/business/FW1.jpg'), filename: 'FW1.jpg')
 
 Review.create(business_id: business3.id, user_id: user1.id, rating: 5, body:"Best place in town. I would go again but a Lannister always pays his debts.")
+Review.create(business_id: business3.id, user_id: user2.id, rating: 1, body:"No money.")
 
 

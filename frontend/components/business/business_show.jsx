@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Sidebar from './sidebar';
+import ReviewsContainer from './reviews_container';
 
 
 class BusinessShow extends React.Component {
@@ -13,14 +14,17 @@ class BusinessShow extends React.Component {
     componentDidMount(){
         this.props.fetchBusiness(this.props.businessId).then( 
             (business) => this.setState({business: business})
-        )
-        console.log("componentdidmount")
+        );
+        
+        
     }
 
     render() {
         console.log("render")
         
-        let business = this.props.business[this.props.match.params.businessId]
+        let business = this.props.business
+        
+        // [this.props.match.params.businessId]
         if (!business) return null;
         console.log(business)
 
@@ -32,8 +36,12 @@ class BusinessShow extends React.Component {
             </>
         } 
 
-        debugger
-        // const reviews = this.props.reviews
+    
+        const reviews = this.props.reviews.map(review => {
+            return (
+                <ReviewsContainer key={review.id} review={review} business={this.props.business} />
+            )
+        })
 
         return (
             <div>
@@ -53,9 +61,9 @@ class BusinessShow extends React.Component {
                 </div>
                 <div className="show-pictures">
                     <div className="show-info-container">
-                        <div className="show-map">Map PLACEHOLDER</div>
+                        <img className="show-map" src="https://i2.wp.com/www.maproomblog.com/xq/wp-content/uploads/2019/03/shadrach-westeros.jpg?resize=840%2C449&ssl=1" />
                         <div className="show-biz-info">
-                            <div>{business.address}</div>
+                            <div><img id="icn" src="http://simpleicon.com/wp-content/uploads/castle.png"/>  {business.address}</div>
                             <div>{business.location}</div>
                         </div>
                     </div>
@@ -66,6 +74,18 @@ class BusinessShow extends React.Component {
                 </div>
 
                 <div className="show-review-div">
+                  
+                    <div>
+                        <div className="reviews-header">
+                            <div className="rec-reviews">Recommended Reviews </div>
+                            <span className="name-reviews"> for {this.props.business.name}</span>  
+                        </div>
+                        
+                        <ul>
+                            {reviews}
+                        </ul>
+                    </div>
+                    
                     <Sidebar />
                 </div>
             </div>

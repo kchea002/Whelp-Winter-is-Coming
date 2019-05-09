@@ -67,4 +67,7 @@
 
 .sidebar-container {
     margin-bottom: 60px;
+    margin-left: 50px;
+     border-left: 1px solid #e6e6e6;
+    padding-left: 50px;
 }
