@@ -1,5 +1,5 @@
 .login-header-index {
-    height: 70px;
+    height: 97px;
     background-color: #d32323;
     padding: 12px 0px;
     display: flex;
@@ -127,6 +127,7 @@
     width: 30%;
     position: fixed;
     left: 60%;
+    /* z-index: -1; */
 }
 
 #map:hover {
@@ -141,4 +142,15 @@
     font-family: sans-serif;
     font-size: 14px;
     color: #333333;
+}
+
+.right-nav-index {
+   display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+     width: 56.5%;
+    position: relative;
+    left: 13%; 
+    top: 5px;
+    /* left: 1px; */
 }

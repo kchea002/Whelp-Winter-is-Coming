@@ -15,7 +15,7 @@ const Homepage = () => {
                         <Link to={'/businesses'}><a className="review">Write a Review</a></Link>
                         </div>
                         <div className="right-nav">
-                            <GreetingContainer />
+                            <GreetingContainer path='business'/>
                         </div>
                         
                     </div>
@@ -85,8 +85,7 @@ const Homepage = () => {
                 <Link to={'/businesses'}>See more businesses</Link>
             </div>
             
-            
-            <div></div>
+           
             </div>        
     )
 };

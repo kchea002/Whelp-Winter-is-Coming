@@ -63,7 +63,7 @@
 
 .sign:hover {
     color: rgb(181, 47, 47);
-    background: white;
+    /* background: white; */
 }
 
 .demo-login {

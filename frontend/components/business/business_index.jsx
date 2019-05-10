@@ -2,7 +2,7 @@ import React from 'react';
 import BusinessContainer from './business_index_container';
 import { Link } from 'react-router-dom';
 import BusinessItemContainer from './business_item_container';
-
+import GreetingContainer from '../greeting/greeting_container';
 
 class BusinessIndex extends React.Component {
     constructor(props) {
@@ -27,6 +27,9 @@ class BusinessIndex extends React.Component {
                     <Link to={'/'}>
                         <img className="login-logo" src="https://i.imgur.com/O22tB8P.png" />
                     </Link>
+                    <div className="right-nav-index">
+                        <GreetingContainer /> 
+                    </div>
                 </div>
                 <div className="index-tab-bar"></div>
                 <div className="index-title-bar"> Browsing businesses in Westeros</div>

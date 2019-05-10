@@ -47,3 +47,20 @@
     display: flex;
     justify-content: center;
 }
+
+#delete-button {
+    background-color: #d32323;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 73px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    user-select: none;
+    font-family:  Helvetica;
+    text-align: center;
+    position: relative;
+    left: 400px;
+    top: 40px;
+}

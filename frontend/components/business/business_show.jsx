@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Sidebar from './sidebar';
 import ReviewsContainer from './reviews_container';
-
+import GreetingContainer from '../greeting/greeting_container';
 
 class BusinessShow extends React.Component {
     constructor(props) {
@@ -20,13 +20,14 @@ class BusinessShow extends React.Component {
     }
 
     render() {
-        console.log("render")
+        
+       
         
         let business = this.props.business
         
         // [this.props.match.params.businessId]
         if (!business) return null;
-        console.log(business)
+        
 
         let buttonLink = `/biz/${this.props.businessId}/review`;
 
@@ -43,7 +44,7 @@ class BusinessShow extends React.Component {
         const reviews = this.props.reviews.map(review => {
         
             return (
-                <ReviewsContainer key={review.id} review={review} business={this.props.business} />
+                <ReviewsContainer key={review.id} review={review} />
             )
         })
 
@@ -56,6 +57,9 @@ class BusinessShow extends React.Component {
                     <Link to={'/'}>
                         <img className="login-logo" src="https://i.imgur.com/O22tB8P.png" />
                     </Link>
+                    <div className="right-nav-index">
+                        <GreetingContainer />
+                    </div>
                 </div>
                 <div className="index-tab-bar"></div>
                 <div className="show-title">

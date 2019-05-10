@@ -77,7 +77,7 @@ Review.create(business_id: business1.id, user_id: user6.id, rating: 3, body:"The
 Review.create(business_id: business2.id, user_id: user6.id, rating: 4, body:"Hotpie's pies are awesome! He taught me how to bake. I hope I can make some pies in the future....")
 
 
-Review.create(business_id: business3.id, user_id: user5.id, rating: 1, body:"I was about to enjoy myself here but this dwarf ran and disturbed me and ran out without any clothes while being chased by guards. I will never come again!")
+Review.create(business_id: business3.id, user_id: user5.id, rating: 1, body:"I was about to enjoy myself here but this dwarf ran out without any clothes while being chased by guards. I will never come again!")
 Review.create(business_id: business3.id, user_id: user3.id, rating: 3, body:"Hodor hodor!")
 Review.create(business_id: business3.id, user_id: user1.id, rating: 5, body:"Best place in town. I promise I will pay next time! Remember a Lannister always pays his debts!")
 

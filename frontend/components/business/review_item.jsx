@@ -2,8 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-const ReviewItem = ({ business, review, author, currentUser, deleteReview }) => {
+const ReviewItem = ({ review, author, currentUser, deleteReview }) => {
 
+    const dispatchFunction = (id) => { return () => deleteReview(id); };
+    const { body } = review;
+
+    const deleteButton = () => {
+        if (currentUser && review.user_id === currentUser.id) {
+            return (<button id="delete-button" onClick={dispatchFunction(review.id)}>Delete</button>)
+        }
+        else { 
+            return ( <div> </div>) 
+        }
+    };
 
     return (
         <li>
@@ -18,7 +29,9 @@ const ReviewItem = ({ business, review, author, currentUser, deleteReview }) => 
                 <div className="body-container">
                     <div>{review.rating} stars</div>
                     <div className="review-body">{review.body}</div>
-                    
+                    <div>
+                        { deleteButton() }
+                    </div>
                 </div>
                
             </div>
