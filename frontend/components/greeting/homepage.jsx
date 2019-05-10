@@ -12,7 +12,7 @@ const Homepage = () => {
 
                     <div className="full-nav">
                         <div className="left-nav">
-                            <a href="" className="review">Write a Review</a>
+                        <Link to={'/businesses'}><a className="review">Write a Review</a></Link>
                         </div>
                         <div className="right-nav">
                             <GreetingContainer />

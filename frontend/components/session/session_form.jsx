@@ -25,6 +25,35 @@ class SessionForm extends React.Component {
         this.props.processDemo({ email: 'jonsnow@westeros.com', password: 'password' });
     }
 
+    info() {
+        if (this.props.formType === 'Sign Up') {
+            return (
+                <div className="login-input-name">
+                    <input type="text" required
+                        value={this.state.first_name}
+                        onChange={this.update('first_name')}
+                        placeholder="First Name"
+                        className="login-input" />
+
+                    <input type="text" required
+                        value={this.state.last_name}
+                        onChange={this.update('last_name')}
+                        placeholder="Last Name"
+                        className="login-input" />
+
+                    <input type="text" required
+                        value={this.state.house}
+                        onChange={this.update('house')}
+                        placeholder="House"
+                        className="login-input" />
+                </div>
+            )
+        }
+        return '';
+    }
+
+
+
 
 
     renderErrors(){
@@ -45,7 +74,7 @@ class SessionForm extends React.Component {
     }
 
     componentWillUnmount(){
-
+        this.props.clearErrors()
     }
 
     title() {
@@ -73,6 +102,8 @@ class SessionForm extends React.Component {
 
 
     render() {
+        const userInfo = this.info();
+
         return (
         
             <div>
@@ -93,7 +124,8 @@ class SessionForm extends React.Component {
                         <form onSubmit={this.handleSubmit} className="login-form-box">
                             
                             <div className="login-form">
-                        
+
+                                { userInfo }
                                 <input type="email"
                                     value={this.state.email}
                                     placeholder="Email"

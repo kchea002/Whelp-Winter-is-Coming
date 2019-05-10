@@ -41,7 +41,7 @@
     border-top: 1px solid #e6e6e6;
     display: flex;
     position: relative;
-    right: 20%;
+    right: 45%;
     /* width: 1000px; */
     /* align-items: center; */
 }
@@ -91,6 +91,7 @@
 .index-length {
     display: flex;
     justify-content: space-between;
+    width: 500px;
 }
 
 .index-name {
@@ -125,7 +126,7 @@
     height: 70%;
     width: 30%;
     position: fixed;
-    left: 65%;
+    left: 60%;
 }
 
 #map:hover {
