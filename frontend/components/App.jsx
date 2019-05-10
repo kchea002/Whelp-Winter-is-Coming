@@ -7,7 +7,7 @@ import SignupFormContainer from './session/signup_form_container';
 import Footer from './greeting/footer';
 import BusinessContainer from './business/business_index_container';
 import BusinessShowContainer from './business/business_show_container';
-
+import CreateReviewContainer from './business/create_review_container';
 
 const App = () => (
     <div>
@@ -16,6 +16,7 @@ const App = () => (
         <AuthRoute exact path="/signup" component={SignupFormContainer} />
         <Route exact path="/businesses" component={BusinessContainer} />
         <Route exact path="/biz/:businessId" component={BusinessShowContainer} />
+        <Route exact path="/biz/:businessId/review" component={CreateReviewContainer} />
         <Route path="/" component={Footer} />
     </div>
 );

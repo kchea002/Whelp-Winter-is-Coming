@@ -4,14 +4,15 @@ import BusinessItem from './business_item';
 const mSTP = (state, ownProps) => {
     let businessId = ownProps.business.id
     let business = state.entities.businesses[businessId]
+    let reviews = business.reviewIds.map( reviewId => state.entities.reviews[reviewId]);
     
     // let business = ownProps.business
 
-    return { [businessId]: ownProps.business }
+    return { [businessId]: ownProps.business, reviews, history: ownProps.history }
 };
 
 const mDTP = dispatch => ({
-    // logout: () => dispatch(logout())
+    
 });
 
 export default connect(mSTP, null)(BusinessItem);

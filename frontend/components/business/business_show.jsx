@@ -28,6 +28,9 @@ class BusinessShow extends React.Component {
         if (!business) return null;
         console.log(business)
 
+        let buttonLink = `/biz/${this.props.businessId}/review`;
+
+
         let businesspictures = null;
         if (business.pictures) {
             businesspictures = <>  
@@ -38,6 +41,7 @@ class BusinessShow extends React.Component {
 
     
         const reviews = this.props.reviews.map(review => {
+        
             return (
                 <ReviewsContainer key={review.id} review={review} business={this.props.business} />
             )
@@ -55,9 +59,14 @@ class BusinessShow extends React.Component {
                 </div>
                 <div className="index-tab-bar"></div>
                 <div className="show-title">
-                    <div className="show-title-name">{business.name}</div>
-                    <div> CROWN PLACEHOLDER: 8 reviews</div>
-                    <div>{business.price}</div>
+                    <div className="show-title-body">
+                        <div className="show-title-name">{business.name}</div>
+                        <div> CROWN PLACEHOLDER: 8 reviews</div>
+                        <div>{business.price}</div>
+                    </div>
+                    <div className="review-background">
+                        <Link to={buttonLink}> <button id="write-button">Write A Review</button></Link>
+                    </div>
                 </div>
                 <div className="show-pictures">
                     <div className="show-info-container">
@@ -95,3 +104,4 @@ class BusinessShow extends React.Component {
 }
 
 export default BusinessShow;
+
