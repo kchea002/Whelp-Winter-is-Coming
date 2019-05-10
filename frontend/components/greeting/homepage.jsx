@@ -48,7 +48,7 @@ const Homepage = () => {
                 <div className="homepage-center">
                     <div className="homepage-pictures">
                         <div className="homepage-pic"> 
-                            <Link to={'/biz/33'}><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/Jon-Snow-and-the-Nights-Watch-at-Castle-Black.jpg" /></Link>
+                            <Link to={'/biz/22'}><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/Jon-Snow-and-the-Nights-Watch-at-Castle-Black.jpg" /></Link>
                             <div className="homepage-pic-info"> 
                                 <Link to={'/biz/22'}><div className="homepage-pic-title">The Night's Watch </div></Link>
                                 <div className="homepage-pic-words">
@@ -58,7 +58,7 @@ const Homepage = () => {
                             </div>
                         </div>
                         <div className="homepage-pic"> 
-                            <Link to={'/biz/31'}><img src="https://i2.wp.com/www.innatthecrossroads.com/wp-content/uploads/2011/03/Honeyed-Chicken-before.jpg?w=1024" /></Link>
+                            <Link to={'/biz/20'}><img src="https://i2.wp.com/www.innatthecrossroads.com/wp-content/uploads/2011/03/Honeyed-Chicken-before.jpg?w=1024" /></Link>
                             <div className="homepage-pic-info">
                                 <Link to={'/biz/20'}><div className="homepage-pic-title"> Hotpie's Crossroad Inn </div></Link>
                                 <div className="homepage-pic-words">
@@ -68,7 +68,7 @@ const Homepage = () => {
                             </div>
                         </div>
                         <div className="homepage-pic"> 
-                        <Link to={'/biz/32'}><img src="https://vignette.wikia.nocookie.net/gameofthrones/images/3/30/Interior_Season_5.png/revision/latest?cb=20160227083922" /></Link>
+                        <Link to={'/biz/21'}><img src="https://vignette.wikia.nocookie.net/gameofthrones/images/3/30/Interior_Season_5.png/revision/latest?cb=20160227083922" /></Link>
                             <div className="homepage-pic-info">
                             <Link to={'/biz/21'}><div className="homepage-pic-title"> Littlefinger's </div></Link>
                                 <div className="homepage-pic-words">
