@@ -4,43 +4,43 @@ const Sidebar = () => {
     return (
         <div className="sidebar-container">
             <div className="sidebar-hours">
-                <div className="sidebar-sub-title">
+                <div className="title">
                     Hours
                 </div>
                 <ul className="sidebar-list">
-                    <li className="sidebar-hours-item">
-                        <div className="sidebar-hours-day">Mon</div>
-                        <div className="sidebar-hours-times">11:00 am - 10:00 pm</div>
+                    <li className="list">
+                        <div className="days">Mon</div>
+                        <div className="hours">11:00 am - 10:00 pm</div>
                     </li>
-                    <li className="sidebar-hours-item">
-                        <div className="sidebar-hours-day">Tue</div>
-                        <div className="sidebar-hours-times">11:00 am - 10:00 pm</div>
+                    <li className="list">
+                        <div className="days">Tue</div>
+                        <div className="hours">11:00 am - 10:00 pm</div>
                     </li>
-                    <li className="sidebar-hours-item">
-                        <div className="sidebar-hours-day">Wed</div>
-                        <div className="sidebar-hours-times">11:00 am - 10:00 pm</div>
+                    <li className="list">
+                        <div className="days">Wed</div>
+                        <div className="hours">11:00 am - 10:00 pm</div>
                     </li>
-                    <li className="sidebar-hours-item">
-                        <div className="sidebar-hours-day">Thu</div>
-                        <div className="sidebar-hours-times">11:00 am - 10:00 pm</div>
+                    <li className="list">
+                        <div className="days">Thu</div>
+                        <div className="hours">11:00 am - 10:00 pm</div>
                     </li>
-                    <li className="sidebar-hours-item">
-                        <div className="sidebar-hours-day">Fri</div>
-                        <div className="sidebar-hours-times">11:00 am - 10:00 pm</div>
+                    <li className="list">
+                        <div className="days">Fri</div>
+                        <div className="hours">11:00 am - 10:00 pm</div>
                     </li>
-                    <li className="sidebar-hours-item">
-                        <div className="sidebar-hours-day">Sat</div>
-                        <div className="sidebar-hours-times">11:00 am - 10:00 pm</div>
+                    <li className="list">
+                        <div className="days">Sat</div>
+                        <div className="hours">11:00 am - 10:00 pm</div>
                     </li>
-                    <li className="sidebar-hours-item">
-                        <div className="sidebar-hours-day">Sun</div>
-                        <div className="sidebar-hours-times">11:00 am - 10:00 pm</div>
+                    <li className="list">
+                        <div className="days">Sun</div>
+                        <div className="hours">11:00 am - 10:00 pm</div>
                     </li>
                 </ul>
             </div>
 
             <div className="sidebar-business-info">
-                <div className="sidebar-sub-title">
+                <div className="title">
                     More business info
                 </div>
                 <ul className="sidebar-list">
@@ -113,15 +113,7 @@ const Sidebar = () => {
                         <div className="sidebar-info-info">Average</div>
                     </li>
                     <li className="sidebar-info-item">
-                        <div className="sidebar-info-desc">Good for Dancing</div>
-                        <div className="sidebar-info-info">No</div>
-                    </li>
-                    <li className="sidebar-info-item">
                         <div className="sidebar-info-desc">Smoking</div>
-                        <div className="sidebar-info-info">Yes</div>
-                    </li>
-                    <li className="sidebar-info-item">
-                        <div className="sidebar-info-desc">Outdoor Seating</div>
                         <div className="sidebar-info-info">Yes</div>
                     </li>
                     <li className="sidebar-info-item">

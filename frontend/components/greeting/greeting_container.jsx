@@ -7,8 +7,7 @@ const mSTP = ({session, entities: { users }}) => ({
 });
 
 const mDTP = dispatch => ({
-    logout: () => dispatch(logout()),
-    demo: () => dispatch(login({email: 'jonsnow@westeros.com', password: 'password'}))
+    logout: () => dispatch(logout())
 });
 
 export default connect(mSTP, mDTP)(Greeting);

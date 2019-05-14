@@ -8,8 +8,11 @@ class BusinessItem extends React.Component {
         let business = this.props.business;
         let reviews = this.props.reviews;
 
-        let review = "";
-        if (reviews.length > 0) { review = '"' + reviews[0].body + '"'; }
+        let review_body = null;
+
+        if (reviews.length > 0) { 
+        review_body = '"' + reviews[0].body + '"'; 
+        }
 
         return (
            
@@ -33,7 +36,7 @@ class BusinessItem extends React.Component {
                         </div>
 
                         <div >
-                                <p className="index-review-area"> {review} </p>
+                                <p className="index-review-area"> {review_body} </p>
                         </div>
                     </div>
 

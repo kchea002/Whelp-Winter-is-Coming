@@ -13,11 +13,4 @@ export const fetchBusiness = id => (
     })
 );
 
-export const createBusiness = business => (
-    $.ajax({
-        method: 'POST',
-        url: '/api/businesses',
-        data: { business }
-    })
-);
 

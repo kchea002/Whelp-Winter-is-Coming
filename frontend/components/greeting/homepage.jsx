@@ -48,9 +48,9 @@ const Homepage = () => {
                 <div className="homepage-center">
                     <div className="homepage-pictures">
                         <div className="homepage-pic"> 
-                            <Link to={'/biz/22'}><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/Jon-Snow-and-the-Nights-Watch-at-Castle-Black.jpg" /></Link>
+                            <Link to={'/biz/119'}><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/Jon-Snow-and-the-Nights-Watch-at-Castle-Black.jpg" /></Link>
                             <div className="homepage-pic-info"> 
-                                <Link to={'/biz/22'}><div className="homepage-pic-title">The Night's Watch </div></Link>
+                                <Link to={'/biz/119'}><div className="homepage-pic-title">The Night's Watch </div></Link>
                                 <div className="homepage-pic-words">
                                     <div>Volunteer Work</div>
                                     <div>The North</div>

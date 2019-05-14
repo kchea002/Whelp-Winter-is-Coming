@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 
 const ReviewItem = ({ review, author, currentUser, deleteReview }) => {
@@ -12,7 +11,7 @@ const ReviewItem = ({ review, author, currentUser, deleteReview }) => {
             return (<button id="delete-button" onClick={dispatchFunction(review.id)}>Delete</button>)
         }
         else { 
-            return ( <div> </div>) 
+            return ( <> </>) 
         }
     };
 

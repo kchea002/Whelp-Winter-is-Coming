@@ -8,7 +8,7 @@ const mSTP = (state, ownProps) => {
     
     // let business = ownProps.business
 
-    return { [businessId]: ownProps.business, reviews, history: ownProps.history }
+    return { [businessId]: ownProps.business, reviews }
 };
 
 const mDTP = dispatch => ({

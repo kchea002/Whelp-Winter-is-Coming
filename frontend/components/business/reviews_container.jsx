@@ -3,7 +3,7 @@ import ReviewItem from './review_item';
 import { deleteReview } from '../../actions/review_actions';
 
 const mapStateToProps = (state, ownProps) => {
-        debugger
+        
     return (
     {currentUser: state.entities.users[state.session.id],
     author: state.entities.users[ownProps.review.user_id]}

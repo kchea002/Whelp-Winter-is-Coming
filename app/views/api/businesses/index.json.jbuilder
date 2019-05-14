@@ -25,4 +25,3 @@
 end
 
 
-# json.partial! '/api/businesses/business', business: @businesses[0]

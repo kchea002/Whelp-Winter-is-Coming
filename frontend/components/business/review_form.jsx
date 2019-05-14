@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link, withRouter} from 'react-router-dom';
-import GreetingContainer from '../greeting/greeting_container';
+import { Link } from 'react-router-dom';
 
 class ReviewForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.navigateToBusinessShow = this.navigateToBusinessShow.bind(this);
+        this.showPage = this.showPage.bind(this);
     }
 
     componentDidMount() {
@@ -15,18 +14,15 @@ class ReviewForm extends React.Component {
         this.setState({ ...this.props.review });
     }
 
-    componentDidUpdate(preProps) {
-        if (preProps.review !== this.props.review) { this.setState({ ...this.props.review }) }
-    }
 
     update(field) {
-        return e => this.setState({ [field]: e.target.value})
+        return e => this.setState({ [field]: e.target.value});
     }
 
 
-    navigateToBusinessShow() {
-        const url = `/biz/${this.props.match.params.businessId}`;
-        this.props.history.push(url);
+    showPage() {
+        const path = `/biz/${this.props.match.params.businessId}`;
+        this.props.history.push(path);
     }
 
     handleSubmit(e){
@@ -39,7 +35,7 @@ class ReviewForm extends React.Component {
             business_id: this.props.match.params.businessId
         }
 
-        this.props.action(pojo).then(() => this.navigateToBusinessShow());
+        this.props.action(pojo).then(() => this.showPage());
 
     }
 
@@ -49,10 +45,11 @@ class ReviewForm extends React.Component {
     render(){
 
 
-        const business = this.props.businesses[this.props.match.params.businessId];
+        let business = this.props.businesses[this.props.match.params.businessId];
         
-
-        if (business === undefined) {return <div> </div> };
+        if (business === undefined) {
+            return <> </> 
+        };
 
         return (
             <div>
@@ -85,4 +82,4 @@ class ReviewForm extends React.Component {
 
 }
 
-export default withRouter(ReviewForm);
+export default ReviewForm;

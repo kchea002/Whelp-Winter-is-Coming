@@ -1,28 +1,12 @@
-.sidebar-sub-title {
-    font-weight: 700;
-    margin-bottom: 12px;
-    color: #d32323;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-.sidebar-hours {
-    margin-bottom: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-.sidebar-list {
-    font-size: 14px;
-    color: #333;
-}
-
-.sidebar-hours-item {
+.list {
     display: flex;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.sidebar-hours-day {
+.days {
     min-width: 36px;
     padding-right: 15px;
     font-weight: 700;
@@ -30,7 +14,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.sidebar-hours-times {
+.hours {
     font-size: 14px;
     padding-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -70,4 +54,22 @@
     margin-left: 50px;
      border-left: 1px solid #e6e6e6;
     padding-left: 50px;
+}
+
+.title {
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #d32323;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar-hours {
+    margin-bottom: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar-list {
+    font-size: 14px;
+    color: #333;
 }
