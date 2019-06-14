@@ -1,24 +1,15 @@
-# README
+Whelp: Game of Thrones
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welp: Winter Is Coming, is a clone of the website Yelp with a Game of Thrones theme. Users are able to write reviews for the various businesses found throughout Westeros.
 
-Things you may want to cover:
+This project was designed and built within 10 days, and I plan to continue to implement new imrpovements over time. 
 
-* Ruby version
+Features
+Secure user authentication created with BCrypt.
+Users can see various businesses throughout Westeros, along with their reviews.
+User is able to create only one review for a buisness and delete it.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Possible Future Features
+    search functionality
+    google map integration
+    edit reviews and upload photos

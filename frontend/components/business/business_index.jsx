@@ -9,9 +9,10 @@ class BusinessIndex extends React.Component {
         super(props);
     }
 
-    componentDidMount(){
-        this.props.fetchBusinesses();
-    }
+    // componentDidMount(){
+    //     this.props.searchLocation('The north');
+
+    // }
 
 
     render(){
@@ -32,7 +33,8 @@ class BusinessIndex extends React.Component {
                     </div>
                 </div>
                 <div className="index-tab-bar"></div>
-                <div className="index-title-bar"> Browsing businesses in Westeros</div>
+                <div className="index-title-bar"> 
+                    <p> Browsing businesses in Westeros</p> </div>
                 <div className="index-item-container" >
                     <ul >
                         {businesses}

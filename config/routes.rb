@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :reviews, only: [:create, :destroy]
     resources :users, only: [:create]
     resource :session, only: [:create, :destroy]
+    get 'businesses/search', to: 'searches#location_search'
     resources :businesses, only: [:index, :show, :create]
   end
 end
