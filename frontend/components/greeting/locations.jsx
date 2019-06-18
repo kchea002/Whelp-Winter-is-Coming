@@ -4,7 +4,7 @@ import React from 'react';
 const Locations = () => {
     return (
         <div className="location-center">
-            <div className="westeros"> Yelp Westeros </div>
+            <div className="westeros"> Whelp Westeros </div>
             <div className="location-homepage">
                 <Link to="/businesses"><div>The North</div></Link>
                 <Link to="/businesses"><div>King's Landing</div></Link>
