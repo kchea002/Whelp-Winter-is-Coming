@@ -12,7 +12,10 @@ const Greeting = ({currentUser}) => {
     );
 
     const loggedUser = () => (
-        <ProfileContainer />
+        <div>
+            <ProfileContainer />
+        </div>
+       
     );
 
     if (currentUser) {

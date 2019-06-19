@@ -1,13 +1,17 @@
 import { connect } from 'react-redux';
 import BusinessShow from './business_show';
-import {fetchBusiness} from '../../actions/business_actions';
+import {fetchBusiness, searchLocation} from '../../actions/business_actions';
 
 const mSTP = (state, ownProps) => {
         
        let businessId = ownProps.match.params.businessId
         let business = state.entities.businesses[businessId]
         
-        let reviews = business.reviewIds.map( rid => state.entities.reviews[rid]);
+        let reviews = [ ]
+        if ( business ) {
+            reviews = business.reviewIds.map(rid => state.entities.reviews[rid]);
+        }
+      
         
     
         return {
@@ -18,7 +22,8 @@ const mSTP = (state, ownProps) => {
 };
 
 const mDTP = dispatch => ({
-   fetchBusiness: id => dispatch(fetchBusiness(id))
+   fetchBusiness: id => dispatch(fetchBusiness(id)),
+    searchLocation: query => dispatch(searchLocation(query)) 
 });
 
 const BusinessShowContainer = connect(mSTP, mDTP)(BusinessShow);

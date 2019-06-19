@@ -3,15 +3,18 @@ import { Link } from 'react-router-dom';
 import Sidebar from './sidebar';
 import ReviewsContainer from './reviews_container';
 import GreetingContainer from '../greeting/greeting_container';
+import Minisearch from './mini_search';
 
 class BusinessShow extends React.Component {
     constructor(props) {
         super(props);
-
+    
+        this.searchLocation = this.props.searchLocation;
     }
     
 
     componentDidMount(){
+        
         this.props.fetchBusiness(this.props.businessId).then( 
             (business) => this.setState({business: business})
         );
@@ -25,7 +28,6 @@ class BusinessShow extends React.Component {
         
         let business = this.props.business
         
-        // [this.props.match.params.businessId]
         if (!business) return null;
         
 
@@ -54,12 +56,20 @@ class BusinessShow extends React.Component {
             
               
                 <div className="login-header-index">
-                    <Link to={'/'}>
-                        <img className="login-logo" src="https://i.imgur.com/O22tB8P.png" />
-                    </Link>
-                    <div className="right-nav-index">
-                        <GreetingContainer />
+                    <div className="login-header-mid-two">
+                        <Link to={'/'}>
+                            <img className="login-logo" src="https://i.imgur.com/O22tB8P.png" />
+                        </Link>
+                        <Minisearch searchLocation={this.searchLocation} history={this.props.history} />
                     </div>
+                    <div className="right-nav-show">
+                        <div className="right-nav-three">
+                            <GreetingContainer />
+                        </div>
+                    </div>
+                  
+
+
                 </div>
                 <div className="index-tab-bar"></div>
                 <div className="show-title">

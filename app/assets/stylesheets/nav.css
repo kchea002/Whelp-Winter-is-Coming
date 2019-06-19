@@ -13,14 +13,6 @@
     align-items: center;
 }
 
-.left-nav {
-    /* justify-content: flex-start;
-    padding-top: 40px;
-    
-    position: relative;
-    left: 25%; */
-   
-}
 
 .left-nav a {
     color:white;
@@ -34,7 +26,11 @@
 
 .right-nav {
     display: flex;
-    justify-content: flex-end;
+    position: relative;
+    top: 30px;
+    left: 70px;
+
+    /* justify-content: flex-end; */
 }
 
 
@@ -47,10 +43,27 @@
     padding: 0px 10px 10px 10px;
 }
 
+.right-nav-two {
+    position: relative;
+   right: 70px;
+   bottom: 30px;
+}
+
+.right-nav-three {
+    width: 0;    
+    display: flex;
+    position: relative;
+    right: 45px;
+    top: 8px;
+}
+
 .log {
     padding-right: 40px;
     display: block;
     background: none;
+    /* padding-left: 40px; */
+    display: flex;
+    flex: none;
 }
 
 .right-nav a:hover {
@@ -84,4 +97,9 @@
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     bottom: 5px;
+}
+
+.right-nav-show {
+    position: relative;
+    /* right: 50px; */
 }

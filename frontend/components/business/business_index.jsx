@@ -28,16 +28,18 @@ class BusinessIndex extends React.Component {
                             <img className="login-logo" src="https://i.imgur.com/O22tB8P.png" />
                         </Link>
                         <Minisearch searchLocation={this.searchLocation} history={this.props.history} />
-                        <div className="right-nav-index">
-                            <GreetingContainer />
-                        </div>
-
+                    </div>
+                    <div className="right-nav-three">
+                        <GreetingContainer />
                     </div>
                     
                 </div>
                 <div className="index-tab-bar"></div>
                 <div className="index-title-bar"> 
-                    <p> Browsing businesses in Westeros</p> </div>
+                    <div>
+                        <p> Browsing businesses in Westeros</p> 
+                    </div>
+                </div>
                 <div className="index-item-container" >
                     <ul >
                         {businesses}

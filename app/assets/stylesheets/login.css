@@ -14,6 +14,7 @@
     background-repeat: no-repeat;
     background-size: 15%;
     height: 85px;
+    /* margin-right: 50px; */
     /* position: relative; */
     /* left: 650px; */
 }
@@ -126,3 +127,28 @@
     left: 20%;
     top: 20px;
 }
+
+.login-header-index {
+    height: 64px;
+    background-color: #d32323;
+    padding: 12px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.login-header-mid {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 243px; 
+}
+
+.login-header-mid-two {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 110px; 
+}
+
+

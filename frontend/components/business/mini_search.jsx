@@ -22,7 +22,7 @@ class Minisearch extends React.Component {
 
     render() {
         return (
-            <form class="search-form" onSubmit={this.handleSubmit}>
+            <form className="search-form" onSubmit={this.handleSubmit}>
                 <div className="search-container-two">
                     <div className="find-label">Find</div>
                     <input id="search" type="text" placeholder="food, weapons, activities..." />

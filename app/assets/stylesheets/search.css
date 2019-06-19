@@ -72,14 +72,9 @@ input:focus, button:focus {
     display: flex;
     justify-content: center;   
     width: 703px;
-    /* position: absolute; */
 
 }
 
-
-
-.login-header-mid {
-    display: flex;
-    justify-content: center;  
-    align-items: center;
+.search-form {
+    margin-left: 100px;
 }

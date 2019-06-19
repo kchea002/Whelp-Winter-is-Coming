@@ -3,7 +3,8 @@ class Api::SearchesController < ApplicationController
     def location_search
         query = params[:query]
         locations = query.split(" ").map do |word|
-            "LOWER(location) LIKE '%#{word.downcase}%'" 
+            
+            Business.sanitize_sql_array(["LOWER(location) LIKE ?", "%#{word.downcase}%"]) 
         end.join(" OR ");
         
              @businesses = Business.where("#{locations}")
