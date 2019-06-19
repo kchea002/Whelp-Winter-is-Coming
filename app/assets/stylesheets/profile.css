@@ -9,7 +9,6 @@
     height: 80px;
     position: relative;
     margin: 10px;
-    /* padding-left: 10px; */
 }
 
 .profile-button {
@@ -17,9 +16,8 @@
     display: flex;
     width: 51px;
     height: 51px;
-
-        position: absolute; */
-    /* top: 100px; */
+        position: absolute;
+  
 }
 
 .profile-width {
