@@ -23,6 +23,8 @@ This project was designed and built within 10 days, and I plan to continue to im
 * Users can see various businesses throughout Westeros, along with their reviews.
 * User is able to create only one review for a business and delete it.
 
-# Search 
+### Search 
 
 Users are able to search for businesses by typing the business name or location in Westeros in the search bar. If a user either enters a location that cannot be found or a empty location, the search button will return a list of all the businesses. 
+
+![hey](https://github.com/kchea002/Whelp-Winter-is-Coming/blob/master/app/assets/images/readme_images/search_photo.png)
