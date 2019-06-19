@@ -1,9 +1,5 @@
 .homepage-pictures {
     height: 320px;
-    /* background: grey; */
-    /* box-sizing: border-box; */
-    /* margin-left: 450px;
-    margin-right: 450px;   */
     width: 1000px;
     display: flex;
     justify-content: space-between;

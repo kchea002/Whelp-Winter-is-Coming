@@ -55,12 +55,35 @@ body {
     width: auto;
     display: flex;
    justify-content: center;
-   align-items: flex-end;
+   align-items: center;
+   align-content: space-between;
+}
+
+.footer-column {    
+    height: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    
 }
 
 .footer-image img {
     width: 300px;
     height: 150px;
+}
+
+.icons {
+      display: flex;
+    justify-content: space-between;
+    width: 250px;
+    position: relative; 
+    left: 20px;
+    top: 50px;
+}
+
+.icons i {
+    font-size: 50px;
+
 }
 
 
