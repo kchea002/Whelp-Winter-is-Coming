@@ -6,9 +6,7 @@
 
 ![hey](https://github.com/kchea002/Whelp-Winter-is-Coming/blob/master/app/assets/images/readme_images/Whelp%20Header.png)
 
-Welp: Winter Is Coming, is a clone of the website Yelp with a Game of Thrones theme. Users are able to write reviews for the various businesses found throughout Westeros.
-
-This project was designed and built within 10 days, and I plan to continue to implement new improvements over time. 
+Welp: Winter Is Coming, is a clone of the website Yelp inspired with a Game of Thrones theme. Users are able to browse the various businesses found throughout Westeros while allowing them to write and read reviews for an immersive Game of Thrones experiece. 
 
 
 ## Technologies
@@ -20,8 +18,9 @@ This project was designed and built within 10 days, and I plan to continue to im
 ## Features
 
 * Secure user authentication created with BCrypt.
-* Users can see various businesses throughout Westeros, along with their reviews.
-* User is able to create only one review for a business and delete it.
+* Shows various businesses throughout Westeros with reviews in an organized, easily-read format. 
+* Allows users to search for businesses by location or name. 
+* User is able to create and delete reviews for businesses. 
 
 ### Search 
 
