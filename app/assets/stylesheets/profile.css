@@ -17,12 +17,14 @@
     display: flex;
     width: 51px;
     height: 51px;
-    position: relative;
-    left: 85%;
+
+        position: relative; */
+    top: 100px; */
 }
 
 .profile-width {
-    width: 200px;
+    position: absolute;
+    
 }
 
 .downarrow-container {
@@ -43,10 +45,9 @@
     width: 217px;
     height: 265px;
     background: white; 
-    position: relative; 
+    position: relative;
+    right: 147px;
     top: 10px;
-    left: 20px;
-    /* display: flex; */
     border-radius: 4px;
     z-index: 1;
 }

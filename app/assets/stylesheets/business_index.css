@@ -1,8 +1,9 @@
 .login-header-index {
-    height: 97px;
+    height: 64px;
     background-color: #d32323;
     padding: 12px 0px;
     display: flex;
+    justify-content: center;
 }
 
 .index-tab-bar {
@@ -152,10 +153,8 @@
 .right-nav-index {
    display: flex;
     justify-content: flex-end;
-    padding-top: 20px;
-     width: 56.5%;
-    position: relative;
-    left: 13%; 
-    top: 5px;
+    /* padding-top: 20px; */
+     /* width: 56.5%; */
+   
     /* left: 1px; */
 }

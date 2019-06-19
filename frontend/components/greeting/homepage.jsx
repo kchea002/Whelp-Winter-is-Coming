@@ -51,12 +51,16 @@ class Homepage extends React.Component {
                     <div className="homepage">
 
                         <div className="full-nav">
-                            <div className="left-nav">
-                            <Link to={'/businesses'}><a className="review">Write a Review</a></Link>
+                            <div className="full-nav-center">
+                                <div className="left-nav">
+                                    <Link to={'/businesses'}><a className="review">Write a Review</a></Link>
+                                </div>
+                                <div className="right-nav-two">
+                                    <GreetingContainer path='business' />
+                                </div>
+
                             </div>
-                            <div className="right-nav">
-                                <GreetingContainer path='business'/>
-                            </div>
+                            
                             
                         </div>
 

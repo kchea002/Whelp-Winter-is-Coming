@@ -3,16 +3,14 @@ import BusinessContainer from './business_index_container';
 import { Link } from 'react-router-dom';
 import BusinessItemContainer from './business_item_container';
 import GreetingContainer from '../greeting/greeting_container';
+import Minisearch from './mini_search';
 
 class BusinessIndex extends React.Component {
     constructor(props) {
         super(props);
+
+        this.searchLocation = this.props.searchLocation;
     }
-
-    // componentDidMount(){
-    //     this.props.searchLocation('The north');
-
-    // }
 
 
     render(){
@@ -25,12 +23,17 @@ class BusinessIndex extends React.Component {
         return (
             <div className="index-main-body">
                 <div className="login-header-index">
-                    <Link to={'/'}>
-                        <img className="login-logo" src="https://i.imgur.com/O22tB8P.png" />
-                    </Link>
-                    <div className="right-nav-index">
-                        <GreetingContainer /> 
+                    <div className="login-header-mid">
+                        <Link to={'/'}>
+                            <img className="login-logo" src="https://i.imgur.com/O22tB8P.png" />
+                        </Link>
+                        <Minisearch searchLocation={this.searchLocation} history={this.props.history} />
+                        <div className="right-nav-index">
+                            <GreetingContainer />
+                        </div>
+
                     </div>
+                    
                 </div>
                 <div className="index-tab-bar"></div>
                 <div className="index-title-bar"> 
