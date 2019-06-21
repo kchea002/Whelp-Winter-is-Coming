@@ -22,8 +22,10 @@
 
 
 .index-title-bar p {
+    width: 100%;
     position: relative;
-    right: 500px;
+    right: 400px; 
+
 }
 
 .index-item-container {
@@ -43,7 +45,8 @@
     border-top: 1px solid #e6e6e6;
     display: flex;
     position: relative;
-    right: 45%;
+    right: 200px;
+    /* right: 45%; */
     /* width: 1000px; */
     /* align-items: center; */
 }
@@ -124,19 +127,20 @@
 }
 
 #map {
-    /* height: 550px; */
-    height: 70%;
-    width: 30%;
+    height: 550px;
+    /* height: 70%;
+    width: 30%; */
+
     position: fixed;
-    left: 60%;
+    left: 1200px;
     /* z-index: -1; */
 }
 
-#map:hover {
+/* #map:hover {
     
     transform: translateX(-500px) translateY(-100px) scale(1.35);
     transition: 1s;
-}
+} */
 
 .index-review-area {
     position: relative;
