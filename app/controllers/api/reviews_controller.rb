@@ -1,6 +1,7 @@
 class Api::ReviewsController < ApplicationController
 
     def create
+        
         @review = Review.new(review_params)
         
         if @review.save
@@ -12,7 +13,7 @@ class Api::ReviewsController < ApplicationController
 
     def update
         @review = Review.find_by(user_id: params[:review][:user_id], business_id: params[:review][:business_id])
-
+        
         if @review.update_attributes(review_params)
             render :show
         else
