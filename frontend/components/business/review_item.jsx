@@ -26,7 +26,7 @@ const ReviewItem = ({ review, author, currentUser, deleteReview }) => {
                     </div>
                 </div>
                 <div className="body-container">
-                    <div>{review.rating} stars</div>
+                    <img className={`stars-medium-${review.rating * 2}` + ' stars-medium'} src="https://i.imgur.com/UkZkm0D.png"/>
                     <div className="review-body">{review.body}</div>
                     <div>
                         { deleteButton() }
