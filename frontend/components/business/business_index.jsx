@@ -13,7 +13,7 @@ class BusinessIndex extends React.Component {
     }
 
     render(){
-        debugger
+        // debugger
         const { businesses, history } = this.props; 
         let allBusinesses = businesses.map((business, idx) => {
             return (
