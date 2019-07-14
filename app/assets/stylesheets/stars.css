@@ -56,3 +56,67 @@
     font-size: 14px;
     color: #666;
 }
+
+.stars-large {
+    width: 132px;
+    height: 24px;
+    margin-right: 6px;
+    object-fit: none;
+}
+
+.stars-large-0 {
+    object-position: 0 0;
+}
+
+.stars-large-2 {
+    object-position: 0 -24px;
+}
+
+.stars-large-3 {
+    object-position: 0 -48px;
+}
+
+.stars-large-4 {
+    object-position: 0 -72px;
+}
+
+.stars-large-5 {
+    object-position: 0 -96px;
+}
+
+.stars-large-6 {
+    object-position: 0 -120px;
+}
+
+.stars-large-7 {
+    object-position: 0 -144px;
+}
+
+.stars-large-8 {
+    object-position: 0 -168px;
+}
+
+.stars-large-9 {
+    object-position: 0 -192px;
+}
+
+.stars-large-10 {
+    object-position: 0 -216px;
+}
+
+.show-stars-review-count {
+    display: flex;
+}
+
+.show-stars-review-count p {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.show-price {
+    font-size: 20px;
+    margin-top: 7px;
+}
