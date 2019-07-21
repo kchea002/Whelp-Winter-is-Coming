@@ -141,7 +141,16 @@
     display: flex;
     align-items: center;
     position: relative;
-    right: 243px; 
+    right: 110px; 
+}
+
+@media screen and (min-width: 1400px) {
+    .login-header-mid {
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 243px; 
+    }  
 }
 
 .login-header-mid-two {
